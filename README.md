@@ -4,7 +4,7 @@ The MCP Firewall is a lightweight, API-driven security layer designed to monitor
 
 
 ## How It Works
-The **MCP Firewall** is built on top of the **FastMCP 2.0 framework**, leveraging its modular architecture and support for modern MCP protocols. At its core, the firewall acts as a **transparent proxy** that filters tool access in real time.
+The **MCP Firewall** is built on top of the **FastMCP 2.0 framework**, leveraging its modular architecture and support for modern MCP protocols. At its core, the firewall acts as a **proxy** that filters tool access in real time.
 
 ### Key Components and Flow
 - ✅ **Streamable-HTTP Support**  
