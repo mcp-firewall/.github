@@ -1,1 +1,3 @@
-# mcp firewall
+# MCP Firewall
+## Introduction
+The MCP Firewall is a lightweight, API-driven security layer designed to monitor and control tool usage within Model Context Protocol (MCP) environments. By inspecting incoming requests and analyzing tool metadata in real time, the firewall can dynamically block or allow tools based on configurable policies. This allows developers and operators to prevent misuse, enforce security rules, and stop suspicious or redundant MCP tools from being executed. The firewall exposes a simple REST API, enabling seamless integration with external agents, dashboards, and automated security workflows.
