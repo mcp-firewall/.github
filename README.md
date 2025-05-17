@@ -7,14 +7,14 @@ The MCP Firewall is a lightweight, API-driven security layer designed to monitor
 The **MCP Firewall** is built on top of the **FastMCP 2.0 framework**, leveraging its modular architecture and support for modern MCP protocols. At its core, the firewall acts as a **proxy** that filters tool access in real time.
 
 ### Key Components and Flow
-- ✅ **Transport Bridging** 
+- **Transport Bridging** 
   The firewall fully supports the **streamable-http** transport and suppts transport bridging to SSE, stdio, streamable-http , ensuring compatibility with the latest MCP clients and agents.
-- 🔄  **Security Boundary**: 
+- **Security Boundary**: 
   - When an external agent or user queries `tools/list`, the request is intercepted by the firewall.  
   - The firewall checks the request against a dynamic **allow/block list** (also called an **exclude list**), which can be maintained via API or configuration file.  
   - The response from the backend MCP server is then **sanitized**, with any excluded tools **removed** from the returned list.
-- 🔌 **API-Driven Control**  
-  - The allow/block list can be updated at runtime using a simple REST API.  
+- **API-Driven Control**  
+  - The filtering can be updated at runtime using a simple REST API.  
   - This makes it easy to automate defenses, apply policy updates, or integrate with detection systems (e.g., flagging tools with overlapping or malicious behavior).
 
 This design ensures that **untrusted or redundant tools are hidden from the agent**, without requiring changes to the underlying MCP server. The result is a secure, adaptable layer of control for any MCP-based system.
