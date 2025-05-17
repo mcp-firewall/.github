@@ -8,7 +8,7 @@ The **MCP Firewall** is built on top of the **FastMCP 2.0 framework**, leveragin
 
 ### Key Components and Flow
 - **Transport Bridging** 
-  The firewall fully supports the **streamable-http** transport and supports transport bridging to **SSE, stdio, streamable-http**, ensuring compatibility.
+  The firewall supports **SSE, stdio, streamable-http**, ensuring compatibility.
 - **Security Boundary**: 
   - When an external agent or user queries `tools/list`, the request is intercepted by the firewall.  
   - The firewall checks the request against a dynamic **allow/block list** (also called an **exclude list**), which can be maintained via API or configuration file.  
